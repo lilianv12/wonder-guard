@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wg-ease-standard: cubic-bezier(.2, .6, .2, 1);
+  --wg-transition-ui: background-color 140ms var(--wg-ease-standard),
+    color 140ms var(--wg-ease-standard), border-color 140ms var(--wg-ease-standard),
+    box-shadow 140ms var(--wg-ease-standard);
+  --wg-texture-petrol: url('/backgrounds/petrol-grain-wide.png');
+}
+
+body {
+  margin: 0;
+  background: #F5F1E8;
+  color: #10262A;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid #EE8A5A;
+  outline-offset: 2px;
+}
+
+.wg-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wg-sec {
+  padding: 96px 0;
+}
+
+.wg-num {
+  font-family: '"Martian Mono"', 'Courier New', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.wg-hero-bg {
+  background-color: #0E3B43;
+  background-image: linear-gradient(90deg, rgba(14,59,67,.62) 0%, rgba(14,59,67,.40) 45%, rgba(14,59,67,.08) 100%), var(--wg-texture-petrol);
+  background-size: cover;
+  background-position: center;
+}

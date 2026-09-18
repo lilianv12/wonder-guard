@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Bricolage Grotesque"', 'Arial', 'sans-serif'],
+        mono: ['"Martian Mono"', '"Courier New"', 'monospace'],
+      },
+      colors: {
+        'petrol-teal': '#0E3B43',
+        'petrol-ink': '#10262A',
+        'clinical-teal': '#1F7A6D',
+        apricot: '#EE8A5A',
+        'stone-charcoal': '#2F2E2B',
+        'stone-taupe': '#8C7E6F',
+        bone: '#F5F1E8',
+        greige: '#ECE6DD',
+        'status-normal': '#1FA98F',
+        'status-caution': '#F0A85A',
+        'status-alert': '#CE3B2C',
+        'status-normal-tint': '#E4F4F0',
+        'status-caution-tint': '#FCEEDB',
+        'status-alert-tint': '#F8E3E0',
+        'status-alert-ink': '#9E2A1E',
+        'text-muted': '#5C6A6C',
+        'on-dark-muted': '#C9C2B5',
+        'primary-hover': '#0A2E35',
+        'primary-active': '#08262B',
+        'secondary-hover': '#1A6659',
+        'secondary-active': '#15564B',
+        'accent-hover': '#DE7746',
+        'accent-active': '#C8683B',
+      },
+      borderRadius: {
+        wxs: '2px',
+        ws: '4px',
+        wm: '8px',
+        wl: '12px',
+        wxl: '16px',
+      },
+      boxShadow: {
+        wg1: '0 1px 2px rgba(16,38,42,.06)',
+        wg2: '0 2px 8px rgba(16,38,42,.08)',
+        wg3: '0 8px 24px rgba(16,38,42,.10)',
+        wg4: '0 18px 48px rgba(16,38,42,.14)',
+        'wg-ring': '0 0 0 3px rgba(238,138,90,.45)',
+      },
+      transitionDuration: {
+        instant: '80ms',
+        fast: '140ms',
+        base: '220ms',
+        slow: '420ms',
+      },
+      maxWidth: {
+        container: '1200px',
+      },
+    },
+  },
+  plugins: [],
+};
